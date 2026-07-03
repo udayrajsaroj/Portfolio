@@ -175,7 +175,7 @@ export const projects: Project[] = [
       { label: "Allocation model", value: "30-30-40" },
       { label: "Payment gateway", value: "Razorpay" },
     ],
-    github: "https://github.com/udayrajsaroj",
+    github: "https://github.com/udayrajsaroj/Treasure-to-Charity",
     accent: "amber",
   },
   {
@@ -198,7 +198,7 @@ export const projects: Project[] = [
       { label: "Anti-share system", value: "Rotating QR" },
       { label: "Concurrent admins", value: "Live" },
     ],
-    github: "https://github.com/udayrajsaroj",
+    github: "https://github.com/udayrajsaroj/gym-management-system",
     accent: "cream",
   },
   {
@@ -221,7 +221,7 @@ export const projects: Project[] = [
       { label: "Embedded server", value: "Shelf + WS" },
       { label: "Network", value: "Local Wi-Fi" },
     ],
-    github: "https://github.com/udayrajsaroj",
+    github: "https://github.com/udayrajsaroj/Bible-Presenter",
     accent: "dark",
   },
 ];
