@@ -77,7 +77,7 @@ export function Hero() {
                 as="span"
                 text={personal.heroHeadline[1]}
                 delay={0.45}
-                className="block text-amber-grad italic font-medium"
+                className="block text-cream italic font-medium"
               />{" "}
               <AnimatedText
                 key={2}
@@ -91,7 +91,7 @@ export function Hero() {
                 as="span"
                 text={personal.heroHeadline[3]}
                 delay={0.75}
-                className="block text-cream-grad"
+                className="block text-cream"
               />
             </h1>
 
