@@ -98,7 +98,7 @@ export function Footer() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="mt-14 pt-10 border-t border-cream/10"
         >
-          <div className="font-display text-[14vw] sm:text-7xl lg:text-8xl xl:text-9xl font-semibold leading-none tracking-tight text-cream/10 hover:text-cream/20 transition-colors duration-700">
+          <div className="font-display text-[11vw] sm:text-7xl lg:text-8xl xl:text-9xl font-semibold leading-none tracking-tight text-cream/10 hover:text-cream/20 transition-colors duration-700">
             {personal.name}
           </div>
         </motion.div>

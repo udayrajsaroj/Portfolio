@@ -64,7 +64,7 @@ export function Hero() {
             </motion.p>
 
             {/* Headline */}
-            <h1 className="mt-4 font-display text-[15vw] sm:text-7xl lg:text-8xl xl:text-8xl font-semibold leading-[0.95] tracking-tight">
+            <h1 className="mt-4 font-display text-5xl sm:text-6xl lg:text-8xl font-semibold leading-[0.95] tracking-tight text-balance">
               <AnimatedText
                 as="span"
                 text={personal.heroHeadline[0]}

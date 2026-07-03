@@ -119,7 +119,7 @@ function ProjectCard({ project, i }: { project: Project; i: number }) {
             {project.metrics.map((m) => (
               <div
                 key={m.label}
-                className="rounded-xl border border-ink/10 bg-cream-soft/50 p-3"
+                className="rounded-xl border border-ink/10 bg-cream-soft/50 p-2.5"
               >
                 <div className={cn("font-display text-lg font-semibold", accent.metric)}>
                   {m.value}

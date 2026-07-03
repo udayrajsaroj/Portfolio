@@ -154,7 +154,7 @@ export function Contact() {
                   <div className="font-mono-label text-[10px] uppercase tracking-[0.16em] text-cream/40">
                     {s.label}
                   </div>
-                  <div className="mt-1 text-sm text-cream/90 truncate">
+                  <div className="mt-1 text-sm text-cream/90 break-all">
                     {s.handle}
                   </div>
                 </div>
