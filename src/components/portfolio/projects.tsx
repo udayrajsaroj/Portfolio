@@ -172,7 +172,7 @@ export function Projects() {
             index="04"
             eyebrow="Selected Work"
             title="Three systems. All shipped solo."
-            description="Every project below was designed, built, secured, and deployed end-to-end. They're not coursework — they're production systems with real users, real money, and real security constraints."
+            description="Every project below was designed, built, secured, and deployed end-to-end. They're not coursework — they're production systems with production-grade architecture, real payment integration, and real security constraints."
           />
 
           <motion.div

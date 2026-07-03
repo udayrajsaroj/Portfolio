@@ -26,7 +26,7 @@ export const personal = {
   about: {
     lead: "I'm a B.Sc. IT graduate who treats security and product experience as the same problem — not two separate concerns.",
     body: [
-      "Over the last three years I've designed, built, and deployed full-stack applications end-to-end — covering role-based access control, payment integration, real-time WebSocket layers, and offline-first mobile clients. My projects aren't coursework; they're production systems with authentication, audit trails, and live users.",
+      "Over the last three years I've designed, built, and deployed full-stack applications end-to-end — covering role-based access control, payment integration, real-time WebSocket layers, and offline-first mobile clients. My projects aren't coursework; they're production systems with authentication, audit trails, and user management.",
       "What ties my work together is a security mindset. Whether I'm shipping a donation platform that handles money, a gym system that prevents credential sharing, or a church casting app that runs its own embedded HTTP server — I think about who should be allowed to do what, and how that decision is enforced at every layer.",
       "I'm currently looking for my first full-time role as a MERN stack developer, a Graduate Engineer Trainee in a security or infrastructure track, or a remote internship where I can keep shipping real software while I learn TypeScript and Docker in depth.",
     ],
