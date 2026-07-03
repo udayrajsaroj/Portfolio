@@ -64,32 +64,10 @@ export function Skills() {
                 </span>
               </div>
 
-              <div className="relative mt-6 flex flex-wrap gap-2">
-                {cat.skills.map((skill, si) => {
-                  const style = levelStyles[skill.level];
-                  return (
-                    <motion.span
-                      key={skill.name}
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{
-                        duration: 0.4,
-                        delay: 0.2 + si * 0.04,
-                      }}
-                      className={cn(
-                        "inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-xs font-medium",
-                        style.chip
-                      )}
-                    >
-                      <span className={cn("h-1.5 w-1.5 rounded-full", style.dot)} />
-                      {skill.name}
-                      <span className="font-mono-label text-[9px] uppercase tracking-[0.12em] opacity-60">
-                        {style.label}
-                      </span>
-                    </motion.span>
-                  );
-                })}
+              <div className="relative mt-6">
+                <p className="font-mono-label text-xs uppercase tracking-[0.15em]">
+                  {cat.skills.map(s => s.name).join(', ')}
+                </p>
               </div>
 
               {/* Bottom accent line */}

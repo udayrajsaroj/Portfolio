@@ -70,19 +70,19 @@ export function Hero() {
                 text={personal.heroHeadline[0]}
                 delay={0.3}
                 className="block text-cream"
-              />
+              />{" "}
               <AnimatedText
                 as="span"
                 text={personal.heroHeadline[1]}
                 delay={0.45}
                 className="block text-amber-grad italic font-medium"
-              />
+              />{" "}
               <AnimatedText
                 as="span"
                 text={personal.heroHeadline[2]}
                 delay={0.6}
                 className="block text-cream"
-              />
+              />{" "}
               <AnimatedText
                 as="span"
                 text={personal.heroHeadline[3]}

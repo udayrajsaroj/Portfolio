@@ -102,7 +102,7 @@ export function Certifications() {
         >
           <p className="font-mono-label text-xs uppercase tracking-[0.16em] text-muted-foreground">
             <span className="text-amber-deep">2</span> corporate job simulations ·
-            <span className="text-amber-deep"> 6+</span> months hands-on practice ·
+            <span className="text-amber-deep"> IAM & ENGINEERING FOCUS </span> ·
             <span className="text-amber-deep"> 100%</span> completion rate
           </p>
         </motion.div>
