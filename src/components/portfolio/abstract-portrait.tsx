@@ -3,6 +3,12 @@
 import { motion } from "framer-motion";
 import { personal } from "@/lib/portfolio-data";
 
+// Round to 2 decimals so the server- and client-rendered strings match.
+// Without this, V8's trig results can serialize with different last digits
+// (e.g. 71.3045335560117 vs 71.30453355601168) and React throws a hydration
+// mismatch on the matching <line> attributes.
+const r = (n: number) => Math.round(n * 100) / 100;
+
 /**
  * Abstract SVG "portrait" — composed of layered concentric rings,
  * a generative gradient orb, and rotating dashed circles. Replaces
@@ -85,10 +91,10 @@ export function AbstractPortrait() {
             const angle = (i * 10 * Math.PI) / 180;
             const r1 = 168;
             const r2 = i % 3 === 0 ? 158 : 163;
-            const x1 = 200 + r1 * Math.cos(angle);
-            const y1 = 200 + r1 * Math.sin(angle);
-            const x2 = 200 + r2 * Math.cos(angle);
-            const y2 = 200 + r2 * Math.sin(angle);
+            const x1 = r(200 + r1 * Math.cos(angle));
+            const y1 = r(200 + r1 * Math.sin(angle));
+            const x2 = r(200 + r2 * Math.cos(angle));
+            const y2 = r(200 + r2 * Math.sin(angle));
             return (
               <line
                 key={i}
