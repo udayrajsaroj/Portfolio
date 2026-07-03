@@ -64,7 +64,8 @@ export function Skills() {
                 </span>
               </div>
 
-              <div className="relative mt-6">
+              <div className="relative mt-6 flex items-center gap-2">
+                <span className={cn("h-1.5 w-1.5 rounded-full", levelStyles[cat.skills[0]?.level ?? 'core'].dot)} />
                 <p className="font-mono-label text-xs uppercase tracking-[0.15em]">
                   {cat.skills.map(s => s.name).join(', ')}
                 </p>
