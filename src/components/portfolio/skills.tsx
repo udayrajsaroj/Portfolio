@@ -64,11 +64,16 @@ export function Skills() {
                 </span>
               </div>
 
-              <div className="relative mt-6 flex items-center gap-2">
-                <span className={cn("h-1.5 w-1.5 rounded-full", levelStyles[cat.skills[0]?.level ?? 'core'].dot)} />
-                <p className="font-mono-label text-xs uppercase tracking-[0.15em]">
-                  {cat.skills.map(s => s.name).join(', ')}
-                </p>
+              <div className="relative mt-6 flex flex-wrap gap-2">
+                {cat.skills.map((skill, si) => {
+                  const style = levelStyles[skill.level];
+                  return (
+                    <span key={skill.name} className="inline-flex items-center gap-1.5 rounded-full border border-ink/15 bg-cream px-3 py-1 text-xs text-ink/80">
+                      <span className={cn("h-1.5 w-1.5 rounded-full", style.dot)} />
+                      {skill.name}
+                    </span>
+                  );
+                })}
               </div>
 
               {/* Bottom accent line */}
